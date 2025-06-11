@@ -1,0 +1,19 @@
+
+@import "tailwindcss";
+@font-face {
+  font-family: 'Pricedown';
+  src: local('Pricedown'), url('Pricedown Bl.otf') format('opentype');
+}
+
+.gta-title {
+  font-family: 'Pricedown', sans-serif;
+}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-black text-white font-sans;
+  }
+}

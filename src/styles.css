@@ -1,0 +1,44 @@
+.bg-gta {
+    background-image: url('/gta-background.jpg');
+    background-size: cover;
+    background-position: center;
+    animation: pan 60s linear infinite;
+  }
+  
+  @keyframes pan {
+    0% {
+      background-position: 0% 50%;
+    }
+    100% {
+      background-position: 100% 50%;
+    }
+  }
+  @keyframes fadeSlide {
+    0% {
+      opacity: 0;
+      transform: translate(-50%, -40px) scale(0.9);
+    }
+    100% {
+      opacity: 1;
+      transform: translate(-50%, 0px) scale(1);
+    }
+  }
+  @keyframes glowPulse {
+    0%, 100% {
+      text-shadow: 0 0 10px #ffc107, 0 0 20px #ffc107;
+    }
+    50% {
+      text-shadow: 0 0 20px #ffd700, 0 0 30px #ffd700;
+    }
+  }
+  @keyframes fadeGlow {
+    0% {
+      opacity: 0;
+      transform: translate(-50%, -40px) scale(0.95);
+    }
+    100% {
+      opacity: 1;
+      transform: translate(-50%, 0) scale(1);
+    }
+  }
+  
